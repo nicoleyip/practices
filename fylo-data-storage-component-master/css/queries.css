@@ -1,0 +1,89 @@
+/************************/
+/* Mobile version */
+/************************/
+
+@media (max-width: 375px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+
+    background-position: center;
+  }
+
+  .container {
+    padding: 2.4rem;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  .operations,
+  .storage {
+    width: 100%;
+  }
+
+  .operations {
+    padding: 4.8rem 3.2rem;
+    border-top-right-radius: 80px;
+  }
+
+  .logo {
+    height: 3.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .operation-icon {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+
+  .operation-icon img {
+    height: 2rem;
+  }
+
+  .operation-icon:first-child img {
+    height: 2.4rem;
+  }
+
+  .storage {
+    padding: 3.2rem 3.2rem 6.4rem 3.2rem;
+  }
+
+  .storage-used {
+    text-align: center;
+  }
+
+  .storage-bar {
+    margin-bottom: 1.6rem;
+  }
+
+  .storage-left {
+    width: 55%;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 50%);
+    border-bottom-right-radius: 10px;
+  }
+
+  .storage-left-inner {
+    padding: 2.4rem;
+    justify-content: center;
+  }
+
+  .storage-left-inner::after {
+    content: none;
+  }
+
+  .number {
+    font-size: 3.6rem;
+  }
+}
+
+/* 
+- Font size (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

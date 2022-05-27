@@ -14,8 +14,9 @@ body {
   line-height: 1;
   color: #fff;
 
-  background-image: url("images/bg-desktop.png"),
-    linear-gradient(#0c122c, #0c122c);
+  background-color: #0c122c;
+  /* How background-image be flexible with viewport? */
+  background-image: url("../images/bg-desktop.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -33,7 +34,7 @@ body {
 }
 
 .container {
-  width: 120rem;
+  width: 100%;
   padding: 12.8rem;
   display: flex;
   gap: 3.2rem;
@@ -49,7 +50,7 @@ body {
 }
 
 .operations {
-  width: 30%;
+  width: 25%;
   border-top-right-radius: 60px;
 }
 
@@ -82,7 +83,7 @@ body {
 }
 
 .storage {
-  width: 50%;
+  width: 45%;
   font-size: 1.4rem;
   position: relative;
 }
