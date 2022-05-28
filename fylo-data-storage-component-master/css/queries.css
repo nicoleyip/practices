@@ -3,10 +3,10 @@
 /************************/
 
 @media (max-width: 375px) {
-  body {
+  .section-fylo {
     background-image: url("../images/bg-mobile.png");
 
-    background-position: center;
+    background-position: top;
   }
 
   .container {
@@ -80,10 +80,32 @@
   }
 }
 
+/***************************/
+/* FIXING SAFARI FLEXBOX GAP */
+/***************************/
+
+.no-flexbox-gap .container div:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.no-flexbox-gap .operation-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .storage-left-inner span:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+@media (max-width: 375px) {
+  .no-flexbox-gap .container div:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}
+
 /* 
 - Font size (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
+*/ ;
